@@ -1,0 +1,36 @@
+.page-host {
+  background-color: #f8f8f8;
+  display: inline-block;
+  overflow: auto;
+}
+
+.viewContainer {
+  background-color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100%;
+  width: 80%;
+  min-width: 1050px;
+  min-height: 600px;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.mainHeading {
+  text-align: center;
+  font-family: 'Laila', serif;
+}
+
+p {
+    text-align: center;
+    font-family: 'Laila', serif;
+}
+
+img.centre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}

@@ -1,0 +1,6 @@
+<template>
+  <require from="./battleships.css"></require>
+  <div>
+      <button repeat.for="row of parentRouter.navigation" type="button" click.trigger="newGame()" class="menuButton">${row.title}</button>
+  <div>
+</template>

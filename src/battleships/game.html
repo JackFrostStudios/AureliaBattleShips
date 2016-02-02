@@ -1,0 +1,34 @@
+<template>
+  <require from="./battleships.css"></require>
+<div class="boardContainer">
+  <div class="board">
+    <h2>Your Board</h2>
+    <table>
+      <tr class="rowContents">
+        <th class="rowLetter"></th>
+        <th class="gameColumn" repeat.for="i of boardSize">${i+1}</th>
+      </tr>
+      <tr class="rowContents" repeat.for="rows of playerBoard">
+        <th class="rowLetter">${convertNumberToLetter($index)}</th>
+        <td class="gameColumn" repeat.for="column of rows" click.trigger="clickPlayerBoard($parent.$index, $index)" style="background-color: ${rows[$index].colour}"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="board">
+    <h2>Enemy Board</h2>
+    <table>
+      <tr class="rowContents">
+        <th class="rowLetter"></th>
+        <th class="gameColumn" repeat.for="i of boardSize">${i+1}</th>
+      </tr>
+      <tr class="rowContents" repeat.for="rows of enemyBoard">
+        <th class="rowLetter">${convertNumberToLetter($index)}</th>
+        <td class="gameColumn" repeat.for="column of rows"  click.trigger="clickEnemyBoard($parent.$index, $index)" style="background-color: ${rows[$index].colour}"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="console">
+  <textarea id="battleshipsConsole" readonly rows="8" cols="100" value.bind="consoleLog"></textarea>
+</div>
+</template>

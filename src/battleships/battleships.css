@@ -1,0 +1,34 @@
+.gameContainer {
+  width: 1000px;
+  min-height: 500px;
+  margin: auto;
+  border: 1px;
+  border-style: solid;
+  text-align: center;
+}
+
+.menuButton {
+  width: 250px;
+  margin: 5px auto 5px auto;
+}
+
+.boardContainer{
+  padding-bottom: 25px;
+}
+
+.board{
+  display: inline-block;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.gameColumn {
+  width: 20px;
+  height: 20px;
+  border: 1px;
+  border-style: solid;
+}
+
+textarea{
+  resize: none;
+}
